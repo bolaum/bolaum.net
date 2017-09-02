@@ -1,0 +1,16 @@
+<header id="header">
+  <a href={{url_for '/'}}>
+    <div id="title">
+      <h1>
+        <div class="cursor">{{config.title}}</div>
+      </h1>
+    </div>
+  </a>
+  <div id="nav">
+    <ul>
+      {{#each theme.nav as |url name|}}
+        <li><a href={{url_for nav}}>{{name}}</a></li>
+      {{/each}}
+    </ul>
+    </div>
+</header>

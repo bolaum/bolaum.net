@@ -1,0 +1,12 @@
+
+<html {{#if config.language}}lang={{truncate config.language 2}}{{/if}}>
+  {{> head}}
+  <body>
+    <div class="content index width mx-auto px2 pt3">
+      {{> header}}
+      {{{body}}}
+    </div>
+    {{> libstyles}}
+    {{> libscripts}}
+  </body>
+</html>
